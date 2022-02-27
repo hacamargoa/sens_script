@@ -1,0 +1,65 @@
+!
+! Instruction file with global PFTs to be used with the
+! CF I/O module.
+!
+! Make sure to start LPJ-GUESS with -input cf when using this
+! instruction file.
+!
+
+import "global.ins"
+!import "crop_n.ins"
+!///////////////////////////////////////////////////////////////////////////////////////
+! Forcing Data & gridlists
+!
+
+param "file_gridlist_cf" (str "gridtest_cf.txt")
+
+param "file_gridlist" (str "gridlist_lctest.txt")
+
+param "file_co2"      (str "/tmp_folders/scratch/hector/inputs/co2_1901_2018.txt")
+
+! N deposition (blank string to use constant pre-industrial level of 2 kgN/ha/year)
+param "file_ndep"     (str "/tmp_folders/scratch/hector/inputs/ndep/GlobalNitrogenDeposition.bin")
+
+param "file_temp"     (str "/tmp_folders/scratch/hector/inputs/AgMERRA/tas_agmerra_1980-2010_reorder.nc4")
+param "variable_temp" (str "tas")
+
+param "file_prec"     (str "/tmp_folders/scratch/hector/inputs/AgMERRA/pr_agmerra_1980-2010_reorder.nc4")
+param "variable_prec" (str "pr")
+
+param "file_insol"      (str "/tmp_folders/scratch/hector/inputs/AgMERRA/rsds_agmerra_1980-2010_reorder.nc4")
+param "variable_insol"  (str "rsds")
+
+param "file_wind" (str "")
+param "variable_wind"  (str "")
+
+param "file_relhum" (str "")
+param "variable_relhum"	(str "")
+
+! Needed if relative humidity is not supplied
+param "file_pres"     (str "")
+param "variable_pres" (str "")
+
+! Needed if relative humidity is not supplied
+param "file_specifichum" (str "")
+param "variable_specifichum" (str "")
+
+! Wet days can only be used with monthly precipitation
+param "file_wetdays"     (str "")
+param "variable_wetdays" (str "")
+
+! Min/max temp is required for BVOC,
+! if BVOC is switched off these can be set to ""
+param "file_min_temp"      (str "")
+param "variable_min_temp"  (str "")
+
+param "file_max_temp"      (str "")
+param "variable_max_temp"  (str "")
+
+! SIMFIRE-BLAZE related files  
+param "file_simfire"  (str "")
+
+! Soil map
+param "file_soildata" (str "/tmp_folders/scratch/hector/inputs/soilmap_center_interpolated.dat")
+!param "file_soildata" (str "../env/soils_lpj.dat")
+

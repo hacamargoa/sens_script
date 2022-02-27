@@ -1,0 +1,14 @@
+tesw_sla 30 35 40
+tesw_CN_min 12.5 15 17.5
+tesw_CN_range 2 2.78 3.5 5
+tesw_sen_N_rate 0.1 0.2 0.3 0.4
+tesw_sen_C_rate 0.1 0.2 0.3 0.4
+tesw_k_nitrogen 0.15 0.2 0.25
+tesw_N_demand_red  0 2.7183 7.3891 20.0855 100
+teww_sla 30 35 40
+teww_CN_min 12.5 15 17.5
+teww_CN_range 2 2.78 3.5 5
+teww_sen_N_rate 0.1 0.2 0.3 0.4
+teww_sen_C_rate 0.1 0.2 0.3 0.4
+teww_k_nitrogen 0.15 0.2 0.25
+teww_N_demand_red  0 2.7183 7.3891 20.0855 100
